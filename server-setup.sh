@@ -11,8 +11,6 @@ sudo snap install docker
 sudo snap install amass
 sudo snap install powershell-preview --classic
 
-
-
 sudo apt install -y \
 cewl \
 asciinema \
@@ -40,7 +38,7 @@ sudo gem install gauntlt
 sudo gem install bundler
 sudo gem install aquatone
 
-mkdir ~/Tools
+mkdir ~/Tools; cd ~/Tools
 
 # Pagodo
 git clone https://github.com/opsdisk/pagodo.git
