@@ -54,7 +54,7 @@ sudo ./setup.sh; cd ..
 # linkscrape
 git clone https://github.com/NickSanzotta/linkScrape.git
 cd linkScrape
-sudo -H pip install requirements.txt
+sudo -H pip install -r requirements.txt
 
 # Domain_analyzer
 git clone https://github.com/eldraco/domain_analyzer.git
