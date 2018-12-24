@@ -54,8 +54,13 @@ sudo ./setup.sh; cd ..
 # linkscrape
 git clone https://github.com/NickSanzotta/linkScrape.git
 cd linkScrape
-sudo -H pip install -r requirements.txt
+sudo -H pip install -r requirements.txt; cd ..
 
 # Domain_analyzer
 git clone https://github.com/eldraco/domain_analyzer.git
-cd domain_analyzer
+
+# Skiptracer
+cd ~/Tools
+git clone https://github.com/xillwillx/skiptracer.git
+cd skiptracer
+sudo -H pip install -r requirement.txt; cd ..
