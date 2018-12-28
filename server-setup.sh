@@ -11,25 +11,6 @@ sudo snap install docker
 sudo snap install amass
 sudo snap install powershell-preview --classic
 
-sudo apt install -y \
-cewl \
-asciinema \
-curl \
-wget \ 
-jq \
-lynx \
-whois \
-nmap \
-tree \
-ffmpeg \
-exif \
-dnsrecon \
-wfuzz \
-nikto \
-wapiti \
-recon-ng \
-zsh
-
 sudo gem install easywins
 sudo gem install wikiranger
 sudo gem install shodanz
@@ -64,3 +45,13 @@ cd ~/Tools
 git clone https://github.com/xillwillx/skiptracer.git
 cd skiptracer
 sudo -H pip install -r requirement.txt; cd ..
+
+# SSRFmap
+git clone https://github.com/dreadlocked/SSRFmap.git
+cd SSRFmap
+bundle install
+
+# datasploit
+git clone https://github.com/DataSploit/datasploit.git
+cd datasploit
+sudo -H pip install -r requirements.txt
