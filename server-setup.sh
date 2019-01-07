@@ -3,6 +3,7 @@ sudo apt update; sudo apt upgrade -y
 
 sudo gem update --system
 sudo pip install --upgrade pip
+sudo pip3 install --upgrade pip
 
 sudo apt install -y \
 golang \
