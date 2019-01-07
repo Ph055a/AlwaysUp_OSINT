@@ -12,6 +12,8 @@ asciinema \
 python-pip \
 python3-pip \
 exif \
+wuzz \
+httpie \
 wget \
 curl \
 cewl \
