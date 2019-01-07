@@ -26,6 +26,7 @@ nmap \
 jq \
 dnswalk \
 dnstracer \
+zsh \
 dmitry 
 
 
