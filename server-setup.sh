@@ -15,9 +15,7 @@ wget \
 curl \
 cewl \
 whois \
-recon-ng \
 nikto \
-build-essentials \
 skipfish
 lynx \
 httptrack \
