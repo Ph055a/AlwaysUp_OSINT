@@ -69,6 +69,7 @@ sudo rm -rf spiderfoot-2.12.0-src.tar.gz
 # Zaproxy
 cd ~/Tools
 wget https://github.com/zaproxy/zaproxy/releases/download/2.7.0/ZAP_2_7_0_unix.sh
+sudo rm -rf ZAP_2_7_0_unix.sh
 
 # Photon
 cd ~/Tools
@@ -99,7 +100,7 @@ git clone https://github.com/eldraco/domain_analyzer.git
 # Skiptracer
 cd ~/Tools
 git clone https://github.com/xillwillx/skiptracer.git; cd skiptracer
-sudo -H pip install -r requirement.txt; 
+sudo -H pip3 install -r requirement.txt; 
 
 # SSRFmap
 cd ~/Tools
