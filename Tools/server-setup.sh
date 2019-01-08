@@ -107,7 +107,7 @@ git clone https://github.com/eldraco/domain_analyzer.git
 # Skiptracer
 cd ~/Tools
 git clone https://github.com/xillwillx/skiptracer.git; cd skiptracer
-sudo -H pip3 install -r requirement.txt; 
+sudo -H pip3 install -r requirements.txt; 
 
 # SSRFmap
 cd ~/Tools
