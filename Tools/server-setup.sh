@@ -33,7 +33,7 @@ $s micro --classic
 $s docker
 $s amass
 $s powershell-preview --classic
-$s yacy-search
+$s yacy-search --edge
 $s certstream
 
 g="sudo gem install"
