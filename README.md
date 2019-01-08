@@ -33,6 +33,21 @@ ufw status
 rsync --archive --chown=<username>:<username> ~/.ssh /home/<username>
 ```
 
+#### Install Tools
+run install.sh
+```bash
+./install.sh
+```
+#### Restart Server
+A restart is needed to complete docker install. Then run the docker script to pull docker images.
+```bash
+
+```
+### Docker Images
+- [x] Kali Linux
+- [x] ParrotSec
+- [x] Metasploit  
+
 ### OSINT Tools
 - [x] Spiderfoot
 - [x] amass
