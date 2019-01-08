@@ -138,3 +138,8 @@ make; cd build; mv xray /usr/bin
 cd ~/Tools
 git clone https://github.com/x0rz/phishing_catcher.git; cd phishing_catcher
 sudo -H pip install -r requirements.txt
+
+# Striker
+cd ~/Tools
+git clone https://github.com/UltimateHackers/Striker; cd Striker
+sudo -H pip install -r requirements.txt
