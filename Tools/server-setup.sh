@@ -28,22 +28,23 @@ dnswalk \
 dnstracer \
 dmitry 
 
+s="sudo snap install"
+$s micro --classic
+$s docker
+$s amass
+$s powershell-preview --classic
+$s yacy-search
+$s certstream
 
-sudo snap install micro --classic
-sudo snap install docker
-sudo snap install amass
-sudo snap install powershell-preview --classic
-sudo snap install yacy-search
-sudo snap install certstream
-
-sudo gem install easywins
-sudo gem install wikiranger
-sudo gem install shodanz
-sudo gem install ryo
-sudo gem install gauntlt
-sudo gem install watir
-sudo gem install bundler
-sudo gem install aquatone
+g="sudo gem install"
+$g easywins
+$g wikiranger
+$g shodanz
+$g ryo
+$g gauntlt
+$g watir
+$g bundler
+$g aquatone
 
 mkdir ~/keys
 mkdir ~/Tools
