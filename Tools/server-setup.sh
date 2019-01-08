@@ -56,6 +56,9 @@ sudo -H pip install censys
 # Raccoon
 sudo -H pip3 install raccoon-scanner
 
+# Twint
+sudo -H pip3 install twint
+
 # Zen
 cd ~/Tools
 git clone https://github.com/s0md3v/Zen.git
