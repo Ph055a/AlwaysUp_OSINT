@@ -41,7 +41,7 @@ run install.sh
 #### Restart Server
 A restart is needed to complete docker install. Then run the docker script to pull docker images.
 ```bash
-
+cd Docker; ./pull_images.sh
 ```
 ### Docker Images
 - [x] Kali Linux
