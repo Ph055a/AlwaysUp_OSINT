@@ -51,6 +51,7 @@ cd Docker; ./pull_images.sh
 ### OSINT Tools
 - [x] Spiderfoot
 - [x] amass
+- [x] twint
 - [x] exif
 - [x] wuzz
 - [x] asciinema
