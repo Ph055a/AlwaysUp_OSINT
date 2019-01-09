@@ -1,4 +1,4 @@
-Always up OSINT server configuration, works well on a $5 per month digital ocean server. This also allows for firing off OSINT scripts using a mobile device via ssh.
+Always up OSINT server configuration, works well on a $5 per month digital ocean server. This also allows for firing off OSINT scripts using a mobile device via SSH.
 
 ### Setup
 
