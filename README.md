@@ -2,7 +2,7 @@ Always up OSINT server configuration.
 
 ### Why?
 - I can SSH using a mobile device!!!
-    Not only can I run OSINT scripts on the go but with ParrotSec and Kali installed it can turn my mobile phone into a somewhat of a pentesting device.
+    Not only can I run OSINT scripts on the go but with ParrotSec and Kali installed it can turn my mobile phone into a recon tool with teeth.
 
 - Sharing is caring
     If you have a team this can be one way of sharing those expensive API keys.
