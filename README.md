@@ -1,6 +1,13 @@
-Always up OSINT server configuration, works well on a $5 per month digital ocean server. This also allows for firing off OSINT scripts using a mobile device via SSH.
+Always up OSINT server configuration.
 
-### Setup
+### Why?
+- I can SSH using a mobile device!!!
+    Not only can I run OSINT scripts on the go but with ParrotSec and Kali installed it can turn my mobile phone into a somewhat of a pentesting device.
+
+- Sharing is caring
+    If you have a team this can be one way of sharing those expensive API keys.
+
+### Digital Ocean Setup
 
 #### Create sudo user
 Create a new user
@@ -49,11 +56,7 @@ run install.sh
 ```bash
 ./install.sh
 ```
-#### Restart Server
-A restart is needed to complete docker install. Then run the docker script to pull docker images.
-```bash
-cd Docker; ./pull_images.sh
-```
+
 ### Docker Images
 - [x] Kali Linux
 - [x] ParrotSec
