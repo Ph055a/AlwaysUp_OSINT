@@ -75,7 +75,6 @@ cd Docker; ./pull_images.sh
 - [x] jq
 - [x] shodan
 - [x] censys
-- [x] httptrack
 - [x] dnswalk
 - [x] dnstracer
 - [x] dmitry
