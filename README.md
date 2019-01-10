@@ -91,9 +91,10 @@ cd Docker; ./pull_images.sh
 - [x] SSRFmap
 - [x] Phishing Catcher
 - [x] infoga
-- [] Gitrob
-- [] xray
+- [ ] Gitrob
+- [ ] xray
 - [x] Striker
+- [ ] Namechk
 
 ### Additional
 - [x] Powershell
