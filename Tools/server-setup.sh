@@ -48,6 +48,7 @@ $g aquatone
 
 mkdir ~/keys
 mkdir ~/Tools
+t="cd ~/Tools"
 
 # shodan & censys
 sudo -H pip install shodan
@@ -56,77 +57,67 @@ sudo -H pip install censys
 # Raccoon
 sudo -H pip3 install raccoon-scanner
 
+# Namechk
+$t; git clone https://github.com/HA71/Namechk.git
+ 
 # Twint
 sudo -H pip3 install twint
 
 # Zen
-cd ~/Tools
-git clone https://github.com/s0md3v/Zen.git
+$t; git clone https://github.com/s0md3v/Zen.git
 
 # Username Anarchy
-cd ~/Tools
-git clone https://github.com/urbanadventurer/username-anarchy.git
+$t; git clone https://github.com/urbanadventurer/username-anarchy.git
 
 # Spiderfoot
-cd ~/Tools
+$t
 wget --user-agent 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:64.0) Gecko/20100101 Firefox/64.0' 'https://www.spiderfoot.net/files/spiderfoot-2.12.0-src.tar.gz'
 tar -xvzf spiderfoot-2.12.0-src.tar.gz
 sudo rm -rf spiderfoot-2.12.0-src.tar.gz
 
 # Zaproxy
-cd ~/Tools
-wget https://github.com/zaproxy/zaproxy/releases/download/2.7.0/ZAP_2_7_0_unix.sh
+$t; wget https://github.com/zaproxy/zaproxy/releases/download/2.7.0/ZAP_2_7_0_unix.sh
 sudo rm -rf ZAP_2_7_0_unix.sh
 
 # Photon
-cd ~/Tools
-git clone https://github.com/s0md3v/Photon.git; cd Photon
+$t; git clone https://github.com/s0md3v/Photon.git; cd Photon
 sudo -H pip3 install -r requirements.txt
 
 # Pagodo
-cd ~/Tools
-git clone https://github.com/opsdisk/pagodo.git
+$t; git clone https://github.com/opsdisk/pagodo.git
 cd pagodo
 sudo -H pip install -r requirements.txt; 
 
 # Pymeta
-cd ~/Tools
-git clone https://github.com/m8r0wn/pymeta.git; cd pymeta
+$t; git clone https://github.com/m8r0wn/pymeta.git; cd pymeta
 sudo chmod +x setup.sh
 sudo ./setup.sh; 
 
 # linkscrape
-cd ~/Tools
-git clone https://github.com/NickSanzotta/linkScrape.git; cd linkScrape
+$t; git clone https://github.com/NickSanzotta/linkScrape.git; cd linkScrape
 sudo -H pip install -r requirements.txt; 
 
 # Domain_analyzer
-cd ~/Tools
-git clone https://github.com/eldraco/domain_analyzer.git
+$t; git clone https://github.com/eldraco/domain_analyzer.git
 
 # Skiptracer
-cd ~/Tools
-git clone https://github.com/xillwillx/skiptracer.git; cd skiptracer
+$t; git clone https://github.com/xillwillx/skiptracer.git; cd skiptracer
 sudo -H pip install -r requirements.txt; 
 
 # SSRFmap
-cd ~/Tools
-git clone https://github.com/dreadlocked/SSRFmap.git;cd SSRFmap
+$t; git clone https://github.com/dreadlocked/SSRFmap.git;cd SSRFmap
 bundle install
 
 # datasploit
-cd ~/Tools
-git clone https://github.com/DataSploit/datasploit.git; cd datasploit
+$t; git clone https://github.com/DataSploit/datasploit.git; cd datasploit
 sudo -H pip install -r requirements.txt
 
 # gasmask
-cd ~/Tools
-git clone https://github.com/twelvesec/gasmask.git; cd gasmask
+$t; git clone https://github.com/twelvesec/gasmask.git; cd gasmask
 sudo -H pip install -r requirements.txt
 
 # infoga
-cd ~/Tools
-git clone https://github.com/m4ll0k/Infoga.git infoga; cd infoga
+$t; git clone https://github.com/m4ll0k/Infoga.git infoga; cd infoga
 python setup.py install; 
 
 # gitrob
@@ -138,11 +129,9 @@ cd $GOPATH/src/github.com/evilsocket/xray
 make; cd build; mv xray /usr/bin
 
 # phishing catcher
-cd ~/Tools
-git clone https://github.com/x0rz/phishing_catcher.git; cd phishing_catcher
+$t; git clone https://github.com/x0rz/phishing_catcher.git; cd phishing_catcher
 sudo -H pip install -r requirements.txt
 
 # Striker
-cd ~/Tools
-git clone https://github.com/UltimateHackers/Striker; cd Striker
+$t; git clone https://github.com/UltimateHackers/Striker; cd Striker
 sudo -H pip install -r requirements.txt
