@@ -13,7 +13,7 @@ usermod -aG sudo <username>
 ```
 
 ---
-### Firewall
+### Enable Firewall
 Allow SSH
 ```bash
 ufw allow OpenSSH
@@ -31,6 +31,17 @@ ufw status
 ### Move SSH Keys
 ```bash
 rsync --archive --chown=<username>:<username> ~/.ssh /home/<username>
+```
+
+Now exit the server and log back in as the created user.
+```bash
+ssh <username>@<IP-Address>
+```
+---
+
+### Clone the repo
+```bash
+git clone https://github.com/Ph055a/AlwaysUp_OSINT.git; cd AlwaysUp_OSINT.git 
 ```
 
 #### Install Tools
@@ -60,8 +71,6 @@ cd Docker; ./pull_images.sh
 - [x] whois
 - [x] cewl
 - [x] nikto
-- [x] skipfish
-- [x] lynx
 - [x] nmap
 - [x] jq
 - [x] shodan
