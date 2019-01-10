@@ -94,7 +94,7 @@ cd Docker; ./pull_images.sh
 - [ ] Gitrob
 - [ ] xray
 - [x] Striker
-- [ ] Namechk
+- [x] Namechk
 
 ### Additional
 - [x] Powershell
