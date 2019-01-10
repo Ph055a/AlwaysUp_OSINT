@@ -117,12 +117,12 @@ $h; $c https://github.com/m4ll0k/Infoga.git infoga; cd infoga
 python setup.py install;
 
 # gitrob
-go get github.com/michenriksen/gitrob
+# go get github.com/michenriksen/gitrob
 
 # Xray
-go get github.com/evilsocket/xray
-cd $GOPATH/src/github.com/evilsocket/xray
-make; cd build; mv xray /usr/bin
+# go get github.com/evilsocket/xray
+# cd $GOPATH/src/github.com/evilsocket/xray
+# make; cd build; mv xray /usr/bin
 
 # phishing catcher
 $h; $c https://github.com/x0rz/phishing_catcher.git; cd phishing_catcher
