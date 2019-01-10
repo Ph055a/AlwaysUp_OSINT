@@ -3,6 +3,7 @@ sudo apt update; sudo apt upgrade -y
 
 sudo apt install -y \
 golang \
+ruby \
 ruby-dev \
 asciinema \
 python-pip \
@@ -15,7 +16,6 @@ curl \
 cewl \
 whois \
 nikto \
-httptrack \
 nmap \
 jq \
 dnswalk \
