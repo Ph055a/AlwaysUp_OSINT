@@ -105,7 +105,7 @@ $h; $c https://github.com/dreadlocked/SSRFmap.git; cd SSRFmap
 bundle install
 
 # datasploit
-$h $c https://github.com/DataSploit/datasploit.git; cd datasploit
+$h; $c https://github.com/DataSploit/datasploit.git; cd datasploit
 sudo -H pip install -r requirements.txt
 
 # gasmask
