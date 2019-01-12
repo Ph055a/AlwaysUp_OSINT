@@ -117,7 +117,7 @@ $h; $c https://github.com/m4ll0k/Infoga.git infoga; cd infoga
 python setup.py install;
 
 # gitrob
-# go get github.com/michenriksen/gitrob
+go get github.com/michenriksen/gitrob
 
 # Xray
 # go get github.com/evilsocket/xray

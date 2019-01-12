@@ -1,6 +1,6 @@
 # 		ZSH Configuration
 # ------------------------------------
-export ZSH=/home/ph055a/.oh-my-zsh		# Path to your oh-my-zsh installation
+export ZSH=$HOME/.oh-my-zsh		# Path to your oh-my-zsh installation
 TERM=xterm-256color						# Term
 ZSH_THEME="blinks"				# Theme See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
 CASE_SENSITIVE="false"					# Uncomment the following line to use case-sensitive completion.
