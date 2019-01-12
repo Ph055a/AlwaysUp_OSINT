@@ -24,6 +24,21 @@ dmitry
 sudo gem update --system
 sudo pip install --upgrade pip
 sudo pip3 install --upgrade pip
+sudo pip install setuptools --upgrade
+
+p="sudo -H pip install"
+$p phonenumbers
+$p netaddr
+$p dns
+$p cherrypy
+$p mako
+$p socks
+$p PyPDF2
+$p openxmllib
+$p stem
+$p bs4
+$p gexf
+$p M2Crypto
 
 s="sudo snap install"
 $s micro --classic
