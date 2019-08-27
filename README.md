@@ -57,11 +57,6 @@ run install.sh
 ./install.sh
 ```
 
-### Docker Images
-- [x] Kali Linux
-- [x] ParrotSec
-- [x] Metasploit  
-
 ### OSINT Tools
 - [x] Spiderfoot
 - [x] amass
