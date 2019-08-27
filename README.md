@@ -104,11 +104,6 @@ run install.sh
 
 ### Additional
 - [x] Powershell
-- [x] Docker
 - [x] Golang
 - [x] Python
 - [x] Ruby
-
-### To Do
-- [] Complete testing
-- [] Configure zshrc to run
