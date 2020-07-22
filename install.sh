@@ -20,7 +20,6 @@ requirements(){
     libpcap-dev \
     snapd \
     phantomjs \
-    npm \
     chromium-browser \
     parallel \
     wget \
@@ -30,7 +29,6 @@ requirements(){
     git \
     curl \
     jq
-    npm i -g wappalyzer wscat
 }
 
 directories(){
