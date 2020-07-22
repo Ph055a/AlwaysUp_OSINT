@@ -258,9 +258,9 @@ clean(){
 }
 
 
-# requirements
-# directories
-# snap
-# gotools
+requirements
+directories
+snap
+gotools
 python_tools
-# clean
+clean
