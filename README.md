@@ -57,53 +57,63 @@ run install.sh
 ./install.sh
 ```
 
-### OSINT Tools
-- [x] Spiderfoot
+### Tools
+- [x] docker
 - [x] amass
-- [x] twint
-- [x] exif
-- [x] wuzz
-- [x] asciinema
-- [x] wget / curl
-- [x] httpie
-- [x] whois
-- [x] cewl
-- [x] nikto
 - [x] nmap
+- [x] wfuzz
+- [x] nethogs
+- [x] wget
+- [x] httpie
 - [x] jq
-- [x] shodan
-- [x] censys
-- [x] dnswalk
-- [x] dnstracer
-- [x] dmitry
-- [x] Yacy Search
-- [x] Certstream
-- [x] Easywins
-- [x] Wikiranger
-- [x] Aquatone
-- [x] Ryo
-- [x] Zen
-- [x] Username Anarchy
-- [x] Raccoon
-- [x] Zaproxy
-- [x] Photon
-- [x] Pagodo
-- [x] Pymeta
-- [x] Linkscrape
-- [x] Domain_Analyzer
-- [x] Skiptracer
-- [x] Datasploit
-- [x] Gasmask
-- [x] SSRFmap
-- [x] Phishing Catcher
-- [x] infoga
-- [ ] Gitrob
-- [ ] xray
+- [x] tree
+- [x] powershell
+- [x] micro
+- [x] Haktldextract
+- [x] ras-fuzzer
+- [x] aquatone
+- [x] Shosubgo
+- [x] GoSpider
+- [x] subjack
+- [x] hakrawler
+- [x] Subfinder
+- [x] httprobe
+- [x] gocewl
+- [x] assetfinder
+- [x] tojson
+- [x] meg
+- [x] unfurl
+- [x] anew
+- [x] qsreplace
+- [x] ffuf
+- [x] Gobuster
+- [x] getJS
+- [x] getallURL
+- [x] shuffledns
+- [x] dalfox
+- [x] dnsprobe
+- [x] nuclei
+- [x] cf-check
+- [x] naabu
+- [x] gowitness
+- [x] chaos
+- [x] httpx
+- [x] Concurl
+- [x] ShuffleDNS
 - [x] Striker
-- [x] Namechk
-
-### Additional
-- [x] Powershell
-- [x] Golang
-- [x] Python
-- [x] Ruby
+- [x] XSStriker
+- [x] Subscraper
+- [x] Arjun
+- [x] Corsy
+- [x] hardcodes
+- [x] shodan
+- [x] Bolt
+- [x] Meta
+- [x] Silver
+- [x] Masscan
+- [x] breacher
+- [x] Sudomy
+- [x] fast-recon
+- [x] SubDomainizer
+- [x] BruteSpray
+- [x] Sublist3r
