@@ -40,7 +40,7 @@ directories(){
 snap(){
     sudo systemctl enable snapd
     sudo systemctl start snapd
-    sudo snap install golang --classic
+    sudo snap install go --classic
     sudo snap install amass
     sudo snap install docker
     sudo snap install powershell --classic
@@ -72,10 +72,10 @@ gotools(){
     echo "[*] Installing Go Tools"
     echo
     
-    echo "Installing Haktldextract"
+    echo "[*] Installing Haktldextract"
     go get -u github.com/hakluke/haktldextract
     
-    echo "Installing ras-fuzzer"
+    echo "[*] Installing ras-fuzzer"
     go get -u github.com/hahwul/ras-fuzzer
 
     echo "[*] Installing aquatone"
@@ -261,6 +261,10 @@ clean(){
     sudo apt autoclean -y
 }
 
+bin(){
+    cd 
+    sudo mv * /usr/bin
+}
 
 requirements
 directories
