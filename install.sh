@@ -51,13 +51,13 @@ lists(){
     "[*] Installing Lists"
     cd ~/Lists
     echo "Pulling SecList"
-    git clone https://github.com/danielmiessler/SecLists.git
+    git clone https://github.com/danielmiessler/SecLists
     echo "Pulling fuzzdb" 
-    git clone https://github.com/fuzzdb-project/fuzzdb.git
+    git clone https://github.com/fuzzdb-project/fuzzdb
     echo "Pulling Payloads All The Things"
     git clone https://github.com/swisskyrepo/PayloadsAllTheThings
     echo "Pulling Common Speak 2"
-    git clone https://github.com/cqsd/daily-commonspeak2.git
+    git clone https://github.com/assetnote/commonspeak2-wordlists
     wget https://public-dns.info/nameservers.txt -O nameservers.txt
     echo "Pulling SuperWordlist"
     git clone github.com/klionsec/SuperWordlist
@@ -73,100 +73,109 @@ gotools(){
     echo
     
     echo "Installing Haktldextract"
-    go get -u -v github.com/hakluke/haktldextract
+    go get -u github.com/hakluke/haktldextract
     
     echo "Installing ras-fuzzer"
-    go get -u -v github.com/hahwul/ras-fuzzer
+    go get -u github.com/hahwul/ras-fuzzer
 
     echo "[*] Installing aquatone"
-    go get -u -v github.com/michenriksen/aquatone
+    go get -u github.com/michenriksen/aquatone
 
     echo "[*] Install Shosubgo"
-    go get -u -v github.com/incogbyte/shosubgo
+    go get -u github.com/incogbyte/shosubgo
 
     echo "[*] Installing GoSpider"
-    go get -u -v github.com/jaeles-project/gospider
+    go get -u github.com/jaeles-project/gospider
 
     echo "[*] Installing subjack"
-    go get -u -v github.com/haccer/subjack
+    go get -u github.com/haccer/subjack
 
     echo "[*] Installing hakrawler"
-    go get -u -v github.com/hakluke/hakrawler
+    go get -u github.com/hakluke/hakrawler
 
     echo "[*] Installing Subfinder"
-    go get -u -v github.com/projectdiscovery/subfinder/cmd/subfinder
+    go get -u github.com/projectdiscovery/subfinder/cmd/subfinder
 
     echo "[*] Installing httprobe"
-    go get -u -v github.com/tomnomnom/httprobe
+    go get -u github.com/tomnomnom/httprobe
 
     echo "[*] Installing gocewl"
-    go get -u -v github.com/shellhunter/gocewl
+    go get -u github.com/shellhunter/gocewl
 
     echo "[*] Installing assetfinder"
-    go get -u -v github.com/tomnomnom/assetfinder
+    go get -u github.com/tomnomnom/assetfinder
 
     echo "[*] Installing tojson"
-    go get -u -v github.com/tomnomnom/hacks/tojson
+    go get -u github.com/tomnomnom/hacks/tojson
 
     echo "[*] Installing meg"
-    go get -u -v github.com/tomnomnom/meg
+    go get -u github.com/tomnomnom/meg
 
     echo "[*] Installing unfurl"
-    go get -u -v github.com/tomnomnom/unfurl
+    go get -u github.com/tomnomnom/unfurl
 
     echo "[*] Installing anew"
-    go get -u -v github.com/tomnomnom/anew
+    go get -u github.com/tomnomnom/anew
 
     echo "[*] Installing qsreplace"
-    go get -u -v github.com/tomnomnom/qsreplace
+    go get -u github.com/tomnomnom/qsreplace
 
     echo "[*] Installing ffuf"
-    go get -u -v github.com/ffuf/ffuf
+    go get -u github.com/ffuf/ffuf
 
     echo "[*] Installing Gobuster"
-    go get -u -v github.com/OJ/gobuster
+    go get -u github.com/OJ/gobuster
 
     echo "[*] Installing getJS"
-    go get -u -v github.com/003random/getJS
+    go get -u github.com/003random/getJS
 
     echo "[*] Installing getallURL"
-    go get -u -v github.com/lc/gau
+    go get -u github.com/lc/gau
 
     echo "[*] Installing shuffledns"
-    go get -u -v github.com/projectdiscovery/shuffledns/cmd/shuffledns
+    go get -u github.com/projectdiscovery/shuffledns/cmd/shuffledns
 
     echo "[*] Installing dalfox"
-    go get -u -v github.com/hahwul/dalfox
+    go get -u github.com/hahwul/dalfox
 
     echo "[*] Installing dnsprobe"
-    go get -u -v github.com/projectdiscovery/dnsprobe
+    go get -u github.com/projectdiscovery/dnsprobe
 
     echo "[*] Installing nuclei"
-    go get -u -v github.com/projectdiscovery/nuclei/cmd/nuclei
+    go get -u github.com/projectdiscovery/nuclei/cmd/nuclei
 
     echo "[*] cf-check"
-    go get -u -v github.com/dwisiswant0/cf-check
-
-    echo "[*] Installing dalfox"
-    go get -u -v github.com/hahwul/dalfox
+    go get -u github.com/dwisiswant0/cf-check
 
     echo "[*] Installing naabu"
-    go get -u -v github.com/projectdiscovery/naabu/cmd/naabu
+    go get -u github.com/projectdiscovery/naabu/cmd/naabu
 
     echo "[*] Installing gowitness"
-    go get -u -v github.com/sensepost/gowitness
+    go get -u github.com/sensepost/gowitness
 
     echo "[*] Installing chaos"
-    go get -u -v github.com/projectdiscovery/chaos-client/cmd/chaos
+    go get -u github.com/projectdiscovery/chaos-client/cmd/chaos
 
     echo "[*] Installing httpx"
-    go get -u -v github.com/projectdiscovery/httpx/cmd/httpx
+    go get -u github.com/projectdiscovery/httpx/cmd/httpx
 
     echo "[*] Installing Concurl"
-    go get -u -v https://github.com/tomnomnom/concurl
+    go get -u https://github.com/tomnomnom/concurl
 
-    echo "[*] Install ShuffleDNS"
-    go get -u -v github.com/projectdiscovery/shuffledns/cmd/shuffledns
+    echo "[*] Installing ShuffleDNS"
+    go get -u github.com/projectdiscovery/shuffledns/cmd/shuffledns
+
+    echo "[*] Installing Subdomain"
+    go get -u https://github.com/dexthlover/subdomains
+
+    echo "[*] Installing comb"
+    go get -u github.com/tomnomnom/comb
+
+    echo "[*] Installing burl"
+    go get -u github.com/tomnomnom/burl
+
+    echo "[*] Installing html-tool"
+    go get -u github.com/tomnomnom/hacks/html-tool
 }
 
 python_tools(){
@@ -218,11 +227,6 @@ python_tools(){
     cd Silver
     pip3 install -r requirements.txt; cd ..
 
-    echo "[*] Installing masscan"
-    git clone https://github.com/robertdavidgraham/masscan
-    cd masscan && make -j
-    cd ..
-
     echo "[*] Installing breacher"
     git clone https://github.com/s0md3v/Breacher
 
@@ -243,11 +247,13 @@ python_tools(){
     git clone https://github.com/x90skysn3k/brutespray
     cd brutespray
     pip3 install -r requirements.txt; cd ..
+}
 
-    echo "[*] Installing Sublist3r"
-    git clone https://github.com/aboul3la/Sublist3r
-    cd Sublist3r
-    pip3 install -r requirements.txt; cd ..
+masscan(){
+    echo "[*] Installing masscan"
+    git clone https://github.com/robertdavidgraham/masscan
+    cd masscan && make -j
+    cd ..
 }
 
 clean(){
@@ -261,4 +267,5 @@ directories
 snap
 gotools
 python_tools
+masscan
 clean
