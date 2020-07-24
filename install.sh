@@ -268,6 +268,7 @@ bin(){
 
 requirements
 directories
+lists
 snap
 gotools
 python_tools
