@@ -10,7 +10,6 @@ requirements(){
     sudo apt install -y \
     nmap \
     dnsutils \
-    golang \
     python3-dev \
     python3-pip \
     nethogs \
@@ -41,6 +40,7 @@ directories(){
 snap(){
     sudo systemctl enable snapd
     sudo systemctl start snapd
+    sudo snap install golang --classic
     sudo snap install amass
     sudo snap install docker
     sudo snap install powershell --classic
