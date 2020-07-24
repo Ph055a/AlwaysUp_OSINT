@@ -160,13 +160,13 @@ gotools(){
     go get -u github.com/projectdiscovery/httpx/cmd/httpx
 
     echo "[*] Installing Concurl"
-    go get -u https://github.com/tomnomnom/concurl
+    go get -u github.com/tomnomnom/concurl
 
     echo "[*] Installing ShuffleDNS"
     go get -u github.com/projectdiscovery/shuffledns/cmd/shuffledns
 
     echo "[*] Installing Subdomain"
-    go get -u https://github.com/dexthlover/subdomains
+    go get -u github.com/dexthlover/subdomains
 
     echo "[*] Installing comb"
     go get -u github.com/tomnomnom/comb
@@ -262,7 +262,7 @@ clean(){
 }
 
 bin(){
-    cd 
+    cd ~/go/bin 
     sudo mv * /usr/bin
 }
 
@@ -273,3 +273,4 @@ gotools
 python_tools
 masscan
 clean
+bin
