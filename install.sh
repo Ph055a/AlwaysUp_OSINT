@@ -76,7 +76,7 @@ gotools(){
 	go get -u github.com/iamstoxe/urlgrab
 	
 	echo "[*] Installing Jaeles"
-	go get -u go get github.com/jaeles-project/jaeles
+	go get -u github.com/jaeles-project/jaeles
     
     echo "[*] Installing Haktldextract"
     go get -u github.com/hakluke/haktldextract
@@ -265,6 +265,7 @@ masscan(){
 clean(){
     sudo apt autoremove -y
     sudo apt autoclean -y
+    cd $GOPATH/bin; sudo mv * /usr/bin
 }
 
 bin(){
