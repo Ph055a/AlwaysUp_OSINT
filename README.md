@@ -1,10 +1,9 @@
-Always up OSINT server configuration.
+A collection of golang tools for bug bounty reconnaissance. 
 
 ### Why?
-- For Bug Bounty hunting or related application security recon.
+- For quickly setting up a Bug Hunting server.
 
 ### Server Setup
-
 #### Create sudo user
 Create a new user
 ```bash
