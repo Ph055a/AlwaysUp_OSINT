@@ -1,7 +1,15 @@
 #!/bin/bash
 
+# check for sudo
+sudo_check(){
+    if [ "$EUID" -ne 0 ];then 
+        echo "[*] This script needs to be run as root"
+        exit
+    fi
+}
 
 requirements(){
+    cd $HOME
     echo "[*] Installing Requirements"
     sudo apt update
     sudo apt install --reinstall build-essential -y
@@ -112,7 +120,7 @@ gotools(){
     go get -u github.com/allyomalley/dnsobserver
 
     echo "[*] Installing GitLeaks"
-    go get -u https://github.com/zricethezav/gitleaks
+    go get -u github.com/zricethezav/gitleaks
 
     echo "[*] Installing Gitrob"
     go get -u github.com/michenriksen/gitrob
@@ -251,14 +259,11 @@ masscan(){
 clean(){
     sudo apt autoremove -y
     sudo apt autoclean -y
-    cd $GOPATH/bin; sudo mv * /usr/bin
-}
-
-bin(){
-    cd ~/go/bin 
+    cd $GOPATH/bin
     sudo mv * /usr/bin
 }
 
+sudo_check
 requirements
 directories
 lists
@@ -266,4 +271,3 @@ snap
 gotools
 masscan
 clean
-bin
