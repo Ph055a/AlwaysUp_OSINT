@@ -1,7 +1,5 @@
 #!/bin/bash
 
-echo "This installation will take some time to complete, you might want to grab yourself a coffee."
-
 
 requirements(){
     echo "[*] Installing Requirements"
@@ -27,7 +25,15 @@ requirements(){
     tree \
     git \
     curl \
+    peco \
+    fzf \
     jq
+
+    wget https://github.com/knqyf263/pet/releases/download/v0.3.0/pet_0.3.0_linux_amd64.deb
+    sudo dpkg -i pet_0.3.0_linux_amd64.deb
+    sudo apt install -f
+    sudo apt remove pet_0.3.0_linux_amd64.deb
+    
 }
 
 directories(){
@@ -72,7 +78,52 @@ gotools(){
     echo "[*] Installing Go Tools"
     echo
 
-	echo "Installing urlgrab"
+    echo "[*] Installing SSRF Sheriff"
+    go get -u github.com/teknogeek/ssrf-sheriff
+    cd $GOPATH/src/github.com/teknogeek/ssrf-sheriff
+    cp config/base.example.yaml config/base.yaml
+    cd $HOME
+
+    echo "[*] Installing wordlistgen"
+    go get -u github.com/ameenmaali/wordlistgen
+
+    echo "[*] Installing qsinject"
+    go get -u github.com/ameenmaali/qsinject
+
+    echo "[*] Installing qsfuzz"
+    go get -u github.com/ameenmaali/qsfuzz
+
+    echo "[*] Installing Aron"
+    go get -u github.com/m4ll0k/Aron
+
+    echo "[*] Installing Gopherus"
+    go get -u github.com/tarunkant/Gopherus
+
+    echo "[*] Installing jwt-hack"
+    go get -u github.com/hahwul/jwt-hack
+    
+    echo "[*] Installing s3reverse"
+    go get -u github.com/hahwul/s3reverse
+
+    echo "[*] Installing gron"
+    go get -u github.com/tomnomnom/gron
+
+    echo "[*] Installing DNSObserver"
+    go get -u github.com/allyomalley/dnsobserver
+
+    echo "[*] Installing GitLeaks"
+    go get -u https://github.com/zricethezav/gitleaks
+
+    echo "[*] Installing Gitrob"
+    go get -u github.com/michenriksen/gitrob
+
+    echo "[*] Installing Hakrevdns"
+    go get -u github.com/hakluke/hakrevdns
+    
+    echo "[*] Installing CorsMe"
+    go get -u github.com/Shivangx01b/CorsMe
+
+	echo "[*] Installing urlgrab"
 	go get -u github.com/iamstoxe/urlgrab
 	
 	echo "[*] Installing Jaeles"
@@ -182,77 +233,12 @@ gotools(){
 
     echo "[*] Installing html-tool"
     go get -u github.com/tomnomnom/hacks/html-tool
-}
 
-python_tools(){
-    echo "[*] Installing Python Tools"
-    echo
-    
-    cd ~/Tools
-    
-    echo "[*] Installing Striker"
-    git clone https://github.com/s0md3v/Striker
-    cd Striker
-    pip3 install -r requirements.txt; cd ..
+    echo "[*] Installing gf"
+    go get -u github.com/tomnomnom/gf
 
-    echo "[*] Installing XSStrike"
-    git clone https://github.com/s0md3v/XSStrike
-    cd XSStrike
-    pip3 install -r requirements.txt; cd ..
-
-    echo "[*] Installing Subscraper"
-    git clone https://github.com/Cillian-Collins/subscraper
-    cd subscraper
-    pip3 install -r requirements.txt; cd ..
-
-    echo "[*] Installing Arjun"
-    git clone https://github.com/s0md3v/Arjun
-
-    echo "[*] Installing Corsy"
-    git clone https://github.com/s0md3v/Corsy
-    cd Corsy
-    pip3 install -r requirements.txt; cd ..
-
-    echo "[*] Installing hardcodes"
-    pip3 install hardcodes
-
-    echo "[*] Installing shodan"
-    pip3 install shodan
-
-    echo "[*] Installing Bolt"
-    git clone https://github.com/s0md3v/Bolt
-    cd Bolt
-    pip3 install -r requirements.txt; cd ..
-
-    echo "[*] Installing Meta"
-    git clone https://github.com/s0md3v/meta && cd meta && make install
-    cd ~/Tools
-
-    echo "[*] Installing Silver"
-    git clone https://github.com/s0md3v/Silver
-    cd Silver
-    pip3 install -r requirements.txt; cd ..
-
-    echo "[*] Installing breacher"
-    git clone https://github.com/s0md3v/Breacher
-
-    echo "[*] Installing Sudomy"
-    git clone --recursive https://github.com/screetsec/Sudomy
-
-    echo "[*] Installing fast-recon"
-    git clone https://github.com/DanMcInerney/fast-recon
-    cd fast-recon
-    pip3 install -r requirements.txt; cd ..
-
-    echo "[*] Installing SubDomainizer"
-    git clone https://github.com/nsonaniya2010/SubDomainizer
-    cd SubDomainizer
-    pip3 install -r requirements.txt; cd ..
-
-    echo "[*] Installing Brutespray"
-    git clone https://github.com/x90skysn3k/brutespray
-    cd brutespray
-    pip3 install -r requirements.txt; cd ..
+    echo "[*] Installing websocket-connection-smuggler"
+    go get -u github.com/c-bata/go-prompt
 }
 
 masscan(){
@@ -278,7 +264,6 @@ directories
 lists
 snap
 gotools
-python_tools
 masscan
 clean
 bin
